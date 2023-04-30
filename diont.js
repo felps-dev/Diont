@@ -333,7 +333,7 @@ export default function Diont(options) {
         return localAddress;
       }
       return addresses[0];
-    } catch {
+    } catch (e) {
       return await getLocalIP();
     }
   }
